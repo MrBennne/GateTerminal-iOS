@@ -17,25 +17,45 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Select Xcode
-        run: sudo xcode-select -s /Applications/Xcode_16.2.app
+        run: |
+          ls -d /Applications/Xcode*.app 2>/dev/null || true
+          XCODE=$(ls -d /Applications/Xcode_*.app 2>/dev/null | sort -V | tail -1)
+          if [ -z "$XCODE" ]; then XCODE="/Applications/Xcode.app"; fi
+          echo "Using: $XCODE"
+          sudo xcode-select -s "$XCODE"
 
-      - name: Show Xcode version
-        run: xcodebuild -version
+      - name: Show build info
+        run: |
+          xcodebuild -version
+          echo "---"
+          xcrun simctl list devices available | grep iPhone | head -10
 
       - name: Build for iOS Simulator
         run: |
+          set -euo pipefail
           xcodebuild build \
             -project GateTerminal.xcodeproj \
             -scheme GateTerminal \
-            -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' \
+            -destination 'generic/platform=iOS Simulator' \
             -configuration Release \
             -derivedDataPath build \
             CODE_SIGNING_ALLOWED=NO \
-            | tail -30
+            ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS=YES \
+            2>&1 | tee /tmp/build.log | tail -60
+          
+          if grep -q "BUILD FAILED" /tmp/build.log; then
+            echo "::error::Build failed. Showing errors:"
+            grep "error:" /tmp/build.log || true
+            exit 1
+          fi
 
       - name: Package .app
         run: |
           APP_PATH=$(find build -name "GateTerminal.app" -type d | head -1)
+          if [ -z "$APP_PATH" ]; then
+            echo "::error::No .app found in build output"
+            exit 1
+          fi
           echo "Found app at: $APP_PATH"
           cd $(dirname "$APP_PATH")
           zip -r "${GITHUB_WORKSPACE}/GateTerminal-Simulator.zip" GateTerminal.app
