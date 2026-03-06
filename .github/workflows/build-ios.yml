@@ -1,0 +1,49 @@
+name: Build GateTerminal iOS
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build GateTerminal iOS
+    runs-on: macos-15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode_16.2.app
+
+      - name: Show Xcode version
+        run: xcodebuild -version
+
+      - name: Build for iOS Simulator
+        run: |
+          xcodebuild build \
+            -project GateTerminal.xcodeproj \
+            -scheme GateTerminal \
+            -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' \
+            -configuration Release \
+            -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO \
+            | tail -30
+
+      - name: Package .app
+        run: |
+          APP_PATH=$(find build -name "GateTerminal.app" -type d | head -1)
+          echo "Found app at: $APP_PATH"
+          cd $(dirname "$APP_PATH")
+          zip -r "${GITHUB_WORKSPACE}/GateTerminal-Simulator.zip" GateTerminal.app
+          ls -lh "${GITHUB_WORKSPACE}/GateTerminal-Simulator.zip"
+
+      - name: Upload .app artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: GateTerminal-iOS-Simulator
+          path: GateTerminal-Simulator.zip
+          retention-days: 30

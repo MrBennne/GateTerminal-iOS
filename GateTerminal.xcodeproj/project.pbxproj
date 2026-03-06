@@ -1,0 +1,201 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB000000 /* GateTerminalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB000000; };
+		BB000001 /* AppearanceSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB000001; };
+		BB000002 /* AuditLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB000002; };
+		BB000003 /* BookingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB000003; };
+		BB000004 /* ConnectionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB000004; };
+		BB000005 /* GateUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB000005; };
+		BB000006 /* RolePermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB000006; };
+		BB000007 /* ShortcutAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB000007; };
+		BB000008 /* SseEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB000008; };
+		BB000009 /* UnitStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB000009; };
+		BB00000A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB00000A; };
+		BB00000B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB00000B; };
+		BB00000C /* PocketBaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB00000C; };
+		BB00000D /* ShortcutPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB00000D; };
+		BB00000E /* UnitRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB00000E; };
+		BB00000F /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB00000F; };
+		BB000010 /* TimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB000010; };
+		BB000011 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB000011; };
+		BB000012 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB000012; };
+		BB000013 /* UnitDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB000013; };
+		BB000014 /* UnitListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB000014; };
+		BB000015 /* AppearanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB000015; };
+		BB000016 /* BulkEditSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB000016; };
+		BB000017 /* DeckGroupedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB000017; };
+		BB000018 /* DrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB000018; };
+		BB000019 /* ListManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB000019; };
+		BB00001A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB00001A; };
+		BB00001B /* NewArrivalSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB00001B; };
+		BB00001C /* QuickDialogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB00001C; };
+		BB00001D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB00001D; };
+		BB00001E /* StatusDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB00001E; };
+		BB00001F /* UnitCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB00001F; };
+		BB000020 /* UnitDetailSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB000020; };
+		BB000021 /* UnitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB000021; };
+		BB900001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB900001; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA000000 /* GateTerminal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GateTerminal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB000000 /* GateTerminalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GateTerminalApp.swift; sourceTree = "<group>"; };
+		FB000001 /* AppearanceSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceSettings.swift; sourceTree = "<group>"; };
+		FB000002 /* AuditLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditLog.swift; sourceTree = "<group>"; };
+		FB000003 /* BookingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingList.swift; sourceTree = "<group>"; };
+		FB000004 /* ConnectionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionState.swift; sourceTree = "<group>"; };
+		FB000005 /* GateUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GateUnit.swift; sourceTree = "<group>"; };
+		FB000006 /* RolePermissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolePermissions.swift; sourceTree = "<group>"; };
+		FB000007 /* ShortcutAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutAction.swift; sourceTree = "<group>"; };
+		FB000008 /* SseEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SseEvent.swift; sourceTree = "<group>"; };
+		FB000009 /* UnitStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitStatus.swift; sourceTree = "<group>"; };
+		FB00000A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FB00000B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		FB00000C /* PocketBaseClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketBaseClient.swift; sourceTree = "<group>"; };
+		FB00000D /* ShortcutPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutPreferences.swift; sourceTree = "<group>"; };
+		FB00000E /* UnitRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitRepository.swift; sourceTree = "<group>"; };
+		FB00000F /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		FB000010 /* TimeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeUtils.swift; sourceTree = "<group>"; };
+		FB000011 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		FB000012 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		FB000013 /* UnitDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitDetailViewModel.swift; sourceTree = "<group>"; };
+		FB000014 /* UnitListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitListViewModel.swift; sourceTree = "<group>"; };
+		FB000015 /* AppearanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceView.swift; sourceTree = "<group>"; };
+		FB000016 /* BulkEditSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulkEditSheet.swift; sourceTree = "<group>"; };
+		FB000017 /* DeckGroupedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckGroupedList.swift; sourceTree = "<group>"; };
+		FB000018 /* DrawerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerView.swift; sourceTree = "<group>"; };
+		FB000019 /* ListManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListManagementView.swift; sourceTree = "<group>"; };
+		FB00001A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FB00001B /* NewArrivalSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewArrivalSheet.swift; sourceTree = "<group>"; };
+		FB00001C /* QuickDialogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickDialogs.swift; sourceTree = "<group>"; };
+		FB00001D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		FB00001E /* StatusDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusDot.swift; sourceTree = "<group>"; };
+		FB00001F /* UnitCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitCard.swift; sourceTree = "<group>"; };
+		FB000020 /* UnitDetailSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitDetailSheet.swift; sourceTree = "<group>"; };
+		FB000021 /* UnitListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitListView.swift; sourceTree = "<group>"; };
+		FB900001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC000001 = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD000000 = { isa = PBXGroup; children = (FD000001, FD999999); sourceTree = "<group>"; };
+		FD999999 /* Products */ = { isa = PBXGroup; children = (FA000000); name = Products; sourceTree = "<group>"; };
+		FD000001 /* GateTerminal */ = { isa = PBXGroup; children = (FB000000, FD000010, FD000020, FD000030, FD000040, FD000050, FD000060, FB900001); path = GateTerminal; sourceTree = "<group>"; };
+		FD000010 /* Models */ = { isa = PBXGroup; children = (FB000001, FB000002, FB000003, FB000004, FB000005, FB000006, FB000007, FB000008, FB000009, FB00000A); path = Models; sourceTree = "<group>"; };
+		FD000020 /* Services */ = { isa = PBXGroup; children = (FB00000B, FB00000C, FB00000D, FB00000E); path = Services; sourceTree = "<group>"; };
+		FD000030 /* Theme */ = { isa = PBXGroup; children = (FB00000F); path = Theme; sourceTree = "<group>"; };
+		FD000040 /* Utils */ = { isa = PBXGroup; children = (FB000010); path = Utils; sourceTree = "<group>"; };
+		FD000050 /* ViewModels */ = { isa = PBXGroup; children = (FB000011, FB000012, FB000013, FB000014); path = ViewModels; sourceTree = "<group>"; };
+		FD000060 /* Views */ = { isa = PBXGroup; children = (FB000015, FB000016, FB000017, FB000018, FB000019, FB00001A, FB00001B, FB00001C, FB00001D, FB00001E, FB00001F, FB000020, FB000021); path = Views; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE000001 = { isa = PBXNativeTarget; buildConfigurationList = FF000003; buildPhases = (FC000002, FC000001, FC000003); buildRules = (); dependencies = (); name = GateTerminal; productName = GateTerminal; productReference = FA000000; productType = "com.apple.product-type.application"; };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE000000 = { isa = PBXProject; attributes = { BuildIndependentTargetsInParallel = 1; LastSwiftUpdateCheck = 1540; LastUpgradeCheck = 1540; TargetAttributes = { FE000001 = { CreatedOnToolsVersion = 15.4; }; }; }; buildConfigurationList = FF000001; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base); mainGroup = FD000000; productRefGroup = FD999999; projectDirPath = ""; projectRoot = ""; targets = (FE000001); };
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC000003 = { isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (BB900001); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC000002 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (BB000000, BB000001, BB000002, BB000003, BB000004, BB000005, BB000006, BB000007, BB000008, BB000009, BB00000A, BB00000B, BB00000C, BB00000D, BB00000E, BB00000F, BB000010, BB000011, BB000012, BB000013, BB000014, BB000015, BB000016, BB000017, BB000018, BB000019, BB00001A, BB00001B, BB00001C, BB00001D, BB00001E, BB00001F, BB000020, BB000021); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Debug project */
+		FF000010 = { isa = XCBuildConfiguration; buildSettings = {
+			ALWAYS_SEARCH_USER_PATHS = NO;
+			ASSTCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+			CLANG_ENABLE_MODULES = YES;
+			CLANG_ENABLE_OBJC_ARC = YES;
+			DEBUG_INFORMATION_FORMAT = dwarf;
+			ENABLE_TESTABILITY = YES;
+			GCC_OPTIMIZATION_LEVEL = 0;
+			GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1", "$(inherited)");
+			ONLY_ACTIVE_ARCH = YES;
+			SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+			SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+			MTL_FAST_MATH = YES;
+			SDKROOT = iphoneos;
+		}; name = Debug; };
+/* Release project */
+		FF000011 = { isa = XCBuildConfiguration; buildSettings = {
+			ALWAYS_SEARCH_USER_PATHS = NO;
+			ASSTCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+			CLANG_ENABLE_MODULES = YES;
+			CLANG_ENABLE_OBJC_ARC = YES;
+			DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+			ENABLE_NS_ASSERTIONS = NO;
+			SWIFT_COMPILATION_MODE = wholemodule;
+			VALIDATE_PRODUCT = YES;
+			IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+			MTL_FAST_MATH = YES;
+			SDKROOT = iphoneos;
+		}; name = Release; };
+/* Debug target */
+		FF000020 = { isa = XCBuildConfiguration; buildSettings = {
+			ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+			ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+			CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 1;
+			DEVELOPMENT_TEAM = "";
+			ENABLE_PREVIEWS = YES;
+			GENERATE_INFOPLIST_FILE = YES;
+			INFOPLIST_KEY_CFBundleDisplayName = GateTerminal;
+			INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+			INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+			INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+			INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+			INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+			LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks");
+			MARKETING_VERSION = 1.0;
+			PRODUCT_BUNDLE_IDENTIFIER = "com.bgnapp.gateterminal";
+			PRODUCT_NAME = "$(TARGET_NAME)";
+			SWIFT_EMIT_LOC_STRINGS = YES;
+			SWIFT_VERSION = 5.0;
+			TARGETED_DEVICE_FAMILY = "1,2";
+		}; name = Debug; };
+/* Release target */
+		FF000021 = { isa = XCBuildConfiguration; buildSettings = {
+			ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+			ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+			CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 1;
+			DEVELOPMENT_TEAM = "";
+			ENABLE_PREVIEWS = YES;
+			GENERATE_INFOPLIST_FILE = YES;
+			INFOPLIST_KEY_CFBundleDisplayName = GateTerminal;
+			INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+			INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+			INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+			INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+			INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+			LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks");
+			MARKETING_VERSION = 1.0;
+			PRODUCT_BUNDLE_IDENTIFIER = "com.bgnapp.gateterminal";
+			PRODUCT_NAME = "$(TARGET_NAME)";
+			SWIFT_EMIT_LOC_STRINGS = YES;
+			SWIFT_VERSION = 5.0;
+			TARGETED_DEVICE_FAMILY = "1,2";
+		}; name = Release; };
+
+/* Begin XCConfigurationList section */
+		FF000001 = { isa = XCConfigurationList; buildConfigurations = (FF000010, FF000011); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		FF000003 = { isa = XCConfigurationList; buildConfigurations = (FF000020, FF000021); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+	};
+	rootObject = FE000000;
+}
